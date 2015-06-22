@@ -22,6 +22,8 @@ public class Produto {
         this.tipo = tipo;
     }
 
+
+
     public int getId() {
         return id;
     }

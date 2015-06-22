@@ -10,12 +10,12 @@ package Model;
  */
 public class Funcionario {
     int id;
-    String nome,endreco,rg,cpf,carteira_de_trabalho,senha,email,telefone;
+    String nome,endereco,rg,cpf,carteira_de_trabalho,senha,email,telefone;
 
-    public Funcionario(int id, String nome, String endreco, String rg, String cpf, String carteira_de_trabalho, String senha, String email, String telefone) {
+    public Funcionario(int id, String nome, String endereco, String rg, String cpf, String carteira_de_trabalho, String senha, String email, String telefone) {
         this.id = id;
         this.nome = nome;
-        this.endreco = endreco;
+        this.endereco = endereco;
         this.rg = rg;
         this.cpf = cpf;
         this.carteira_de_trabalho = carteira_de_trabalho;
@@ -24,6 +24,18 @@ public class Funcionario {
         this.telefone = telefone;
     }
 
+    public Funcionario(String nome, String endereco, String rg, String cpf, String carteira_de_trabalho, String senha, String email, String telefone) {
+        this.nome = nome;
+        this.endereco = endereco;
+        this.rg = rg;
+        this.cpf = cpf;
+        this.carteira_de_trabalho = carteira_de_trabalho;
+        this.senha = senha;
+        this.email = email;
+        this.telefone = telefone;
+    }
+
+    
     public int getId() {
         return id;
     }
@@ -40,12 +52,12 @@ public class Funcionario {
         this.nome = nome;
     }
 
-    public String getEndreco() {
-        return endreco;
+    public String getEndereco() {
+        return endereco;
     }
 
-    public void setEndreco(String endreco) {
-        this.endreco = endreco;
+    public void setEndereco(String endereco) {
+        this.endereco = endereco;
     }
 
     public String getRg() {
@@ -95,9 +107,4 @@ public class Funcionario {
     public void setTelefone(String telefone) {
         this.telefone = telefone;
     }
-
-    public String getEndereco() {
-        throw new UnsupportedOperationException("Not yet implemented");
     }
-    
-}

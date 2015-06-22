@@ -9,23 +9,41 @@ package Model;
  * @author info206
  */
 public class Fornecedor {
-    int id;
-    String cnpj,nome,telefone,endereco;
+    int Produto_idProduto, idFornecedor,telefone;
+    String cnpj, nome, endereco;
 
-    public Fornecedor(int id, String cnpj, String nome, String telefone, String endereco) {
-        this.id = id;
+    public Fornecedor(int Produto_idProduto, int idFornecedor, int telefone, String cnpj, String nome, String endereco) {
+        this.Produto_idProduto = Produto_idProduto;
+        this.idFornecedor = idFornecedor;
+        this.telefone = telefone;
         this.cnpj = cnpj;
         this.nome = nome;
-        this.telefone = telefone;
         this.endereco = endereco;
+        
     }
 
-    public int getId() {
-        return id;
+    public int getProduto_idProduto() {
+        return Produto_idProduto;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setProduto_idProduto(int Produto_idProduto) {
+        this.Produto_idProduto = Produto_idProduto;
+    }
+
+    public int getIdFornecedor() {
+        return idFornecedor;
+    }
+
+    public void setIdFornecedor(int idFornecedor) {
+        this.idFornecedor = idFornecedor;
+    }
+
+    public int getTelefone() {
+        return telefone;
+    }
+
+    public void setTelefone(int telefone) {
+        this.telefone = telefone;
     }
 
     public String getCnpj() {
@@ -44,14 +62,6 @@ public class Fornecedor {
         this.nome = nome;
     }
 
-    public String getTelefone() {
-        return telefone;
-    }
-
-    public void setTelefone(String telefone) {
-        this.telefone = telefone;
-    }
-
     public String getEndereco() {
         return endereco;
     }
@@ -59,5 +69,4 @@ public class Fornecedor {
     public void setEndereco(String endereco) {
         this.endereco = endereco;
     }
-    
 }

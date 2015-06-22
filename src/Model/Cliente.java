@@ -66,10 +66,10 @@ public class Cliente {
         this.telefone = telefone;
     }
 
-    public Connection Conecta() {
-        throw new UnsupportedOperationException("Not yet implemented");
+ 
+       
     }
    
    
    
-   }
+   

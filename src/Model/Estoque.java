@@ -9,14 +9,17 @@ package Model;
  * @author info206
  */
 public class Estoque {
-    int id;
-    String produto,quantidade;
+    int id, produto,quantidade;
 
-    public Estoque(int id, String produto, String quantidade) {
+    public Estoque(int id, int produto, int quantidade) {
         this.id = id;
         this.produto = produto;
         this.quantidade = quantidade;
     }
+
+    public Estoque(int id_produto, int parseInt) {
+        this.produto = produto;
+        this.quantidade = quantidade;    }
 
     public int getId() {
         return id;
@@ -26,20 +29,20 @@ public class Estoque {
         this.id = id;
     }
 
-    public String getProduto() {
+    public int getProduto() {
         return produto;
     }
 
-    public void setProduto(String produto) {
+    public void setProduto(int produto) {
         this.produto = produto;
     }
 
-    public String getQuantidade() {
+    public int getQuantidade() {
         return quantidade;
     }
 
-    public void setQuantidade(String quantidade) {
+    public void setQuantidade(int quantidade) {
         this.quantidade = quantidade;
     }
-    
+
 }
