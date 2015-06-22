@@ -18,7 +18,7 @@ public  class ClienteController {
 
            Util util = new Util();
             try (Connection conexao = util.conecta()) {
-                String sql = "INSERT INTO pessoa (endereco, nome,cpf,email ,rg,telefone) VALUES (?, ?, ?, ?, ?, ?)";
+                String sql = "INSERT INTO Cliente (Endereco, Nome_Cliente,CPF,Email ,RG,Telefone) VALUES (?, ?, ?, ?, ?, ?)";
                 PreparedStatement statement = conexao.prepareStatement(sql);// note que agora criamos um Statement de forma diferente
                 statement.setString(1, c.getEndereco());
                 statement.setString(2, c.getNome());
